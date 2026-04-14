@@ -1,0 +1,57 @@
+/* The Universal Selector */
+
+/* *{
+    color: aqua;
+    font-family: "Poppins";
+} */
+
+
+
+/* The Type Selector */
+
+/* h1{
+    color: seagreen;
+}
+
+p{
+    background-color: pink;
+} */
+
+
+/* The Descendant Selector*/
+
+/* div p{
+    background-color: palegoldenrod;
+} */
+
+/* The Class Seletor */
+
+/* .yellow{
+    color: blue;
+    font-size: 23px;
+} */
+
+/* The Id Selector */
+
+/* #seagreen{
+    color: seagreen;
+    font-size: large;
+    font-weight: 700;
+} */
+
+/* The Child Selector */
+/* body > p{
+    color: purple;
+}
+
+span > p{
+    background-color: wheat;
+    color: darkblue;
+    font-weight: 900;
+    font-size: 20px;
+}*/
+
+/* The Attribute Selector */
+/* input [type="checkbox"]{
+    accent-color: red;
+} */
