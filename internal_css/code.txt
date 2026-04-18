@@ -1,0 +1,10 @@
+translateX(value): Moves an element horizontally along the X-axis.
+
+Positive value: Moves the element to the right.
+Negative value: Moves the element to the left.
+
+
+translateY(value): Moves an element vertically along the Y-axis.
+
+Positive value: Moves the element down.
+Negative value: Moves the element up.

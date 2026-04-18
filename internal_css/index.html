@@ -26,26 +26,32 @@
             width: 100px;
             background-color:darkblue;
             border-radius: 50%;
-            animation: move 2s ease 1s infinite;
+            animation: move 3s linear 1s infinite;
         }
 
         @keyframes move {
             0%{
-                transform: translatey(-180px);
+                transform: translate(0 , 0);
             }
-            25%{
-                transform: translateX(70px);                
+            20%{
+                /* first jump */
+                transform: translate(150px , -200px);
+            }
+            40%{ 
+                transform: translate(300px, 0);
             }
 
-            50%{
-                transform: translatey(-280px);
+            55%{
+                transform: translate(420px , -120px);
             }
-
+            70%{
+                transform: translate(540px , 0);
+            }
             80%{
-
+                transform: translate(660px , -60px);
             }
             100%{
-
+                transform: translate(790px , 0);
             }
         }
 
