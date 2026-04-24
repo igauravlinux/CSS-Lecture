@@ -9,13 +9,14 @@
 
 /* The Type Selector */
 
-/* h1{
+ /* h1{
     color: seagreen;
-}
-
-p{
-    background-color: pink;
+    background-repeat: no-repeat;
 } */
+
+/* p{
+    background-color: pink;
+}  */
 
 
 /* The Descendant Selector*/

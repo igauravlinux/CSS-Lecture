@@ -1,0 +1,12 @@
+p{
+    /* text-shadow: 2px 2px 5px blue;
+     */
+
+
+
+/* Two diffrent colored sahdows */
+
+text-shadow: 2px 2px red , -2px -2px blue;
+
+
+}
