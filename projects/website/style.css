@@ -6,145 +6,73 @@
 html, body{
     width: 100%;
     height: 100vh;
+    background-color: #adadad;
+    padding: 10px ;
     font-family: "Poppins";
-    background: linear-gradient(190deg , blue , skyblue , darkblue);
-    position: fixed;
-
 }
-nav{
-    padding: 0 30px;
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(15px);
-    height: 8%;
-    margin: 10px;
-    border-radius: 50px;
+.grid-container{
+    width: 1480px;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 260px 1fr;
+}
+.child{
+    background-color: #fff;
+    border: 2px solid blue;
+}
+.box-1{
+    background-color: white;
+    grid-row-start: 1;
+    grid-row-end: 8;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    padding: 10px;
     overflow: hidden;
 }
-nav .logo{
+.box-1 .user-profile{
+    padding: 20px;
     display: flex;
     align-items: center;
-    margin-right: 15px;
 }
-nav .logo span{
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: .6px;
-    color: #1D4ED8;
+.box-1 .user-profile .name{
+    margin-left: 10px;
+}
+.box-1 .user-profile .name h1{
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 600;
+}
+.box-1 .user-profile .name p{
+    white-space: nowrap;
+    font-size: 14px;
     font-weight: 600;
 }
 
-/* social - links */
-
-nav .social-links{
+.box-1 .list{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     list-style: none;
-    gap: 30px;
-
+    
 }
-nav .social-links li a{
-    color: rgb(18, 16, 16);
-    text-decoration: none;
-    font-weight: 500;
-    transition: all .2s ease-in;
-    margin-right: 10px;
-}
-nav .social-links li a:hover{
-    color: rgb(240, 248, 255);
-}
-
-nav button{
-    padding: 8px 20px;
-    border-radius: 20px;
-    border: 0;
-    outline: 2px solid rgb(31, 118, 169);
+.box-1 .list li{
+    padding: 25px;
+    width: 100%;
+    color: black;
     cursor: pointer;
-    font-family: "Poppins";
-    white-space: nowrap;
-    font-weight: 500;
-    transition: all 0.2s ease;
 }
-nav button:active{
-    transform: scale(0.9);
-}
-nav button:hover{
-    outline: 2px solid white;
-    color: aliceblue;
-    background-color: #135ee0;
-}
-
-/* aside */
-
-aside{
-    width: 250px;
-    background-color: rgba(255, 255, 255, 0.3);
-    height: 88%;
-    position: fixed;
-    left: 0;
-    padding: 25px 15px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-aside .user-profile {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
-}
-aside .user-profile img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-aside .user-profile .name h1{
-    font-size: 1.1rem;
-}
-aside .user-profile .name p{
-    font-size: 0.9rem;
+.box-1 .list li a{
+    text-decoration: none;
+    color: black;
     font-weight: 500;
 }
-aside .user-profile i{
-    font-size: 1.3rem;
+.box-1 .list li:hover{
+    background-color: rgba(0, 0, 255, 0.1);
+    border-radius: 10px;
 }
-aside .dashboard{
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-    list-style-type: none;
-}
-
-aside .dashboard a{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 1.1rem;
-    color: black;
-    text-decoration: none;
-}
-aside .sec-dashboard{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-}
-aside .sec-dashboard a{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    font-size: 1.1rem;
-    color: black;
-    text-decoration: none;
-}
-main{
-    width: calc(250px - 100%);
-    height: 100%;
-    background-color: white;
+.box-1 .user-profile:hover{
+        background-color: rgba(0, 0, 255, 0.1);
+    border-radius: 10px;
 }
