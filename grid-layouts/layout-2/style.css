@@ -18,14 +18,14 @@ html, body{
     display: grid;
     gap: 15px;
     grid-template-columns: 500px 300px 300px;
-    grid-template-rows: repeat(4 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
 }
 .child{
     background-color: #F4EED9;
 }
 .box-1{
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 3;
 }
 .box-2{
     grid-column-start: 2;
@@ -35,7 +35,7 @@ html, body{
     grid-row-start: 3;
     grid-row-end: 5;
 }
-.box-5{
+.box-6{
     grid-row-start: 4;
-    grid-row-end: 3;
+    grid-row-end: 5;
 }
